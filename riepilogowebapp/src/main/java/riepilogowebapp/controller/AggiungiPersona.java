@@ -32,7 +32,7 @@ public class AggiungiPersona extends HttpServlet {
 		Persona persona = new Persona();
 		persona.setNome(req.getParameter("nome"));
 		persona.setCognome(req.getParameter("cognome"));
-		persona.setNumero(Long.parseLong("numero"));
+		persona.setNumero(Long.parseLong(req.getParameter(("numero"))));
 		Service s = new Service(emf);
 
 				s.salvaPersona(persona);

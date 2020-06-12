@@ -27,7 +27,7 @@
 		}
 	%>
 	
-	<form action="aggiungiPersona">
+	<form action="aggiungiPersona" method="post">
   
   <input type="text" id="nome" name="nome" placeholder = "Nome"><br><br>
 
